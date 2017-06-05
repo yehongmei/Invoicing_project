@@ -1,5 +1,5 @@
 package vo;
-
+/*123*/
 public class Customer {
 	private String ccode;
 	private String cname;
