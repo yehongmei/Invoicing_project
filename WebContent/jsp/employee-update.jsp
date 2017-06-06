@@ -36,8 +36,15 @@
         </tr>
         <tr>
             <td class="title">员工性别：</td>
-            <td class="edit">&nbsp;<input type="radio" name="sex" value=<%=employee.getSex()%> checked>&nbsp;男&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="radio" name="sex" value=<%=employee.getSex()%>>&nbsp;女</td>
+            <td class="edit">&nbsp;
+            	<%if(employee.getSex().equals("男")){ %>
+	            	<input type="radio" name="sex" value="男" checked>&nbsp;男&nbsp;&nbsp;&nbsp;&nbsp;
+	                <input type="radio" name="sex" value="女" >&nbsp;女
+            	<%}else{ %>
+	            	<input type="radio" name="sex" value="男"%> &nbsp;男&nbsp;&nbsp;&nbsp;&nbsp;
+	                <input type="radio" name="sex" value="女" checked>&nbsp;女
+            	<%} %>
+                </td>
         </tr>
         <tr>
             <td class="title">出生年月日：</td>
