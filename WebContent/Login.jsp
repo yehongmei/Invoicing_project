@@ -49,7 +49,11 @@
 				placeholder="请输入验证码" /> 
 				<img id="identifyCodeImg" src="getIdentifyCode" class="img">
 				 <span id="error"></span> 
-				 <input type="submit" value="登录" class="input1">
+				 <br/>
+				 	 <br/>
+				 	 	
+				 <input type="submit" value="登录" class="input1">&nbsp;&nbsp;
+				 <a href="jsp/register.jsp" style="text-decoration: none" target="parent" class="input1">注册</a></td>
 		</div>
 	</form>
 </body>

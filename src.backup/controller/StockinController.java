@@ -30,7 +30,7 @@ public class StockinController {
 		return "stockIn";
 	}
 	
-	/*添加进货单前的准备工作*/
+	/*添加进货单前的准备工�?/
 	@RequestMapping("/preAddStockInOrder")
 	public String preAddOrder(Model model){
 		model.addAttribute("customerNames",customerService.selectAll());
@@ -39,18 +39,18 @@ public class StockinController {
 		return "stockIn-insert";
 	}
 	
-	/*添加进货单*/
+	/*添加进货�?/
 	@RequestMapping("/addStockInOrder")
 	public String addOrder(Stockin stockin,Model model){
 		if(stockinService.insertStockin(stockin)){
-			model.addAttribute("stockinResult", "添加进货单成功");
+			model.addAttribute("stockinResult", "添加进货单成�?);
 		}else{
-			model.addAttribute("stockinResult", "添加进货单失败");
+			model.addAttribute("stockinResult", "添加进货单失�?);
 		}
 		return "stockIn-insert-result";
 	}
 	
-	/*查询一个订货单，为了修改做准备*/
+	/*查询�?��订货单，为了修改做准�?/
 	@RequestMapping("/selectStockInOrder")
 	public String selectStockInOrder(Integer sid,Model model){
 		model.addAttribute("customerNames",customerService.selectAll());
@@ -59,14 +59,14 @@ public class StockinController {
 		model.addAttribute("stockin", stockinService.selectStockin(sid));
 		return "stockIn-update";
 	}
-	/*修改订货单*/
+	/*修改订货�?/
 	@RequestMapping("/updateStockInOrder")
 	public String StockInOrder(Stockin stockin){
 		this.stockinService.updateStockin(stockin);
 		return "home";
 	}
 	
-	/*删除订货单*/
+	/*删除订货�?/
 	@RequestMapping("/deleteStockInOrder")
 	public String StockInOrder(Integer sid){
 		stockinService.deleteStockin(sid);

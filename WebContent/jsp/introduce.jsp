@@ -17,7 +17,7 @@
 </head>
 <body>
 <div id="banner">
-    <img id="img" src="Images/jxc2.png"/>
+    <img id="img" src="images/jxc2.png"/>
 </div>
 </body>
 </html>

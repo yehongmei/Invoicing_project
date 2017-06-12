@@ -67,10 +67,10 @@
                 <td><%=stockin.getStockindate()%></td>
                 <td><%=stockin.getEname()%></td>
                 <td>
-                <a href="jsp/stockIn-insert.jsp"
+                <a href="preAddStockInOrder"
 						style="text-decoration: none">新增</a>&nbsp;&nbsp; 
-						<a href="" style="text-decoration: none">修改</a>&nbsp;&nbsp;
-						<a href="" style="text-decoration: none">删除</a></td>
+						<a href="selectStockInOrder?sid=<%=stockin.getSid()%>" style="text-decoration: none">修改</a>&nbsp;&nbsp;
+						<a href="deleteStockInOrder?sid=<%=stockin.getSid()%>" style="text-decoration: none">删除</a></td>
                 	<%
 					}
 				%>

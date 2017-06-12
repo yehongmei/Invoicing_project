@@ -13,10 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>进销存系统左侧栏菜单</title>
 <base href="<%=basePath%>">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
 <link rel="stylesheet" href="css/sidebar-menu.css">
 <style type="text/css">
 </style>
